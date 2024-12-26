@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stroll/screens/stroll_ui_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,6 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Stroll UI',
+      theme: ThemeData.dark(),
+      home: const StrollUiScreen(),
+    );
   }
 }
