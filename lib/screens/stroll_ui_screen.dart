@@ -10,18 +10,14 @@ class StrollUiScreen extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                //Header Section
-                HeaderSection(),
-                SizedBox(height: 16),
-                // Profile Section
-                ProfileSection(),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              //Header Section
+              HeaderSection(),
+              // Profile Section
+              ProfileSection(),
+            ],
           ),
         ),
       ),
