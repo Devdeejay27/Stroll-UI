@@ -63,6 +63,75 @@ class StrollUiScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  // Instructional Text and Icons
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Pick your option.See who has a similar mind.',
+                            style: TextStyle(
+                              color: Colors.white.withOpacity(0.8),
+                              fontSize: 12,
+                            ),
+                            textAlign: TextAlign.left, //text to the left
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            softWrap: true,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 16.0,
+                        ),
+                        Row(
+                          children: [
+                            //Mic icon with purple border
+                            Container(
+                              height: 40.0,
+                              width: 40.0,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color:
+                                      const Color.fromARGB(255, 184, 117, 196),
+                                  width: 2.0,
+                                ),
+                              ),
+                              child: IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.mic,
+                                  color: Color.fromARGB(255, 184, 117, 196),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8.0,
+                            ), //spacing btw
+                            // Arrow forward icon with purple fill
+                            Container(
+                              height: 40.0,
+                              width: 40.0,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color.fromARGB(255, 184, 117, 196),
+                              ),
+                              child: IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ],
