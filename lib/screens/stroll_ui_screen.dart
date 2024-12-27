@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stroll/widgets/header_section.dart';
+import 'package:stroll/widgets/profile_section.dart';
 
 class StrollUiScreen extends StatelessWidget {
   const StrollUiScreen({super.key});
@@ -9,15 +10,14 @@ class StrollUiScreen extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                //Header Section
-                HeaderSection(),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              //Header Section
+              HeaderSection(),
+              // Profile Section
+              ProfileSection(),
+            ],
           ),
         ),
       ),
