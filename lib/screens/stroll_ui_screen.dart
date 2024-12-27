@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stroll/widgets/header_section.dart';
+import 'package:stroll/widgets/profile_section.dart';
 
 class StrollUiScreen extends StatelessWidget {
   const StrollUiScreen({super.key});
@@ -16,6 +17,9 @@ class StrollUiScreen extends StatelessWidget {
               children: [
                 //Header Section
                 HeaderSection(),
+                SizedBox(height: 16),
+                // Profile Section
+                ProfileSection(),
               ],
             ),
           ),
