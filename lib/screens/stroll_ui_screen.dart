@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stroll/widgets/footer_icons.dart';
 import 'package:stroll/widgets/header_section.dart';
 import 'package:stroll/widgets/option_button.dart';
 import 'package:stroll/widgets/profile_section.dart';
@@ -63,7 +64,7 @@ class StrollUiScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-
+                  const SizedBox(height: 16.0),
                   // Instructional Text and Icons
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -134,6 +135,9 @@ class StrollUiScreen extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(height: 16.0),
+              // Footer Icons
+              const FooterIcons(),
             ],
           ),
         ),
